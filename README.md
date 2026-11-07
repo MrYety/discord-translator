@@ -109,4 +109,6 @@ Experimental prototype. The extension has been syntax-checked, but behavior can 
 
 ## License
 
-No license file is included yet. Add a license before accepting outside contributions or granting reuse rights.
+This project is available under the **PolyForm Noncommercial License 1.0.0**. You may use, modify, and share it for noncommercial purposes under the terms in [`LICENSE`](./LICENSE). Commercial use requires separate permission from the licensor.
+
+This is a **source-available, noncommercial** project, not an OSI-approved open-source project: the license restricts commercial use. See the [official PolyForm license text](https://polyformproject.org/licenses/noncommercial/1.0.0) for the complete terms.
