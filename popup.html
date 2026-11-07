@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Discord Translator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1 data-i18n="title">Discord Translator</h1>
+  <label><span data-i18n="uiLanguage">Język dodatku</span>
+    <select id="uiLanguage">
+      <option value="pl">🇵🇱 Polski</option><option value="tr">🇹🇷 Türkçe</option>
+      <option value="ro">🇷🇴 Română</option><option value="de">🇩🇪 Deutsch</option>
+      <option value="it">🇮🇹 Italiano</option><option value="en">🇬🇧 English</option>
+      <option value="cs">🇨🇿 Čeština</option><option value="hu">🇭🇺 Magyar</option>
+    </select>
+  </label>
+  <label class="check"><input id="enabled" type="checkbox"><span data-i18n="enabled">Włącz tłumaczenia</span></label>
+  <label><span data-i18n="target">Język docelowy</span>
+    <select id="target">
+      <option value="pl">🇵🇱 Polski</option><option value="tr">🇹🇷 Türkçe</option>
+      <option value="ro">🇷🇴 Română</option><option value="de">🇩🇪 Deutsch</option>
+      <option value="it">🇮🇹 Italiano</option><option value="en">🇬🇧 English</option>
+      <option value="cs">🇨🇿 Čeština</option><option value="hu">🇭🇺 Magyar</option>
+    </select>
+  </label>
+  <label><span data-i18n="channel">Język tego kanału</span>
+    <select id="channel">
+      <option value="" data-i18n="automatic">🌐 Automatycznie / wybierz</option>
+      <option value="pl">🇵🇱 Polski</option><option value="tr">🇹🇷 Türkçe</option>
+      <option value="ro">🇷🇴 Română</option><option value="de">🇩🇪 Deutsch</option>
+      <option value="it">🇮🇹 Italiano</option><option value="en">🇬🇧 English</option>
+      <option value="cs">🇨🇿 Čeština</option><option value="hu">🇭🇺 Magyar</option>
+    </select>
+  </label>
+  <button id="save" data-i18n="save">Zapisz dla kanału</button>
+  <p id="status" aria-live="polite"></p>
+  <button id="prepare" class="secondary" data-i18n="prepare">Przygotuj tłumaczenie kanału</button>
+  <p id="prepareStatus" aria-live="polite"></p>
+  <small data-i18n="note">Pakiety tłumaczeń są pobierane osobno od pakietów językowych Chrome. Pierwsze przygotowanie może potrwać.</small>
+  <script src="popup.js"></script>
+</body>
+</html>
